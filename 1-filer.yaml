@@ -1,0 +1,11 @@
+swagger: '3.1.0'
+info:
+  version: 1.0.0
+  title: please Login first 
+  description: <h1 style="color:red;">Login to continue services below or go to</h1> https://evil.com
+
+paths:
+  /Login_Page:
+    post:
+      summary: please Login first
+      description: please Login first
