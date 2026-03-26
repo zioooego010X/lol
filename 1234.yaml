@@ -1,0 +1,8 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Login Page
+  description: |
+    <h1 style="background-color:DodgerBlue;">Hello World</h1>
+paths:
+  /Login_Page:
