@@ -1,0 +1,7 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Login Page",
+    "description": "<h1>Login to continue services below or go to</h1> : <h2>https://evil.com</h2>",
+  }
