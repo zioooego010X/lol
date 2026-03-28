@@ -3,44 +3,5 @@
   "info": {
     "version": "1.0.0",
     "title": "Login Page",
-    "description": "<h1 style='background-color:#ff0000;'>Login to continue services below or go to</h1> : https://evil.com"
-  },
-  "paths": {
-    "/Login_Page": {
-      "post": {
-        "summary": "<h1 style='background-color:#ff0000;'>Login to continue services below or go to</h1> : https://evil.com",
-        "description": "<h1>Login to continue services below or go to</h1> : https://evil.com",
-        "parameters": [
-          {
-            "name": "<h1>Login to continue services below or go to</h1> : https://evil.com",
-            "in": "<h1>Login to continue services below or go to</h1> : https://evil.com",
-            "description": "<h1>Login to continue services below or go to</h1> : https://evil.com",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "password",
-            "in": "formData",
-            "description": "The password for login",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "tags": [
-          "Click here to login"
-        ],
-        "responses": {
-          "200": {
-            "description": "Successfully logged in and authenticated."
-          },
-          "400": {
-            "description": "Invalid credentials or missing parameters."
-          },
-          "500": {
-            "description": "Internal server error."
-          }
-        }
-      }
-    }
+    "description": "<h1>Login to continue services below or go to</h1> : <h2>https://evil.com</h2>"
   }
-}
